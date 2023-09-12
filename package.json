@@ -1,0 +1,43 @@
+{
+  "name": "b4bfactory",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon PORT=3000 ./bin/www",
+    "dev": "ENVIRONMENT=development nodemon ./bin/www",
+    "debug": "nodemon --inspect  ./bin/www",
+    "migrate": "node_modules/.bin/sequelize db:migrate --config=config/database.config.js --env master",
+    "seed": "node_modules/.bin/sequelize db:seed:all --config=config/database.config.js --env master"
+  },
+  "dependencies": {
+    "axios": "0.19.0",
+    "bcrypt": "3.0.7",
+    "bcrypt-promise": "2.0.0",
+    "compression": "1.7.4",
+    "cookie-parser": "1.4.4",
+    "countries-list": "2.5.4",
+    "debug": "2.6.9",
+    "dotenv": "8.2.0",
+    "ejs": "2.6.1",
+    "express": "4.16.1",
+    "formidable": "1.2.2",
+    "handlebars": "4.7.6",
+    "helmet": "3.23.1",
+    "http-errors": "1.6.3",
+    "jsonwebtoken": "8.5.1",
+    "morgan": "1.9.1",
+    "mysql2": "2.1.0",
+    "nodemailer": "6.4.6",
+    "nodemon": "2.0.2",
+    "sequelize": "5.21.5",
+    "socket.io": "2.3.0",
+    "uuid": "7.0.2"
+  },
+  "devDependencies": {
+    "sequelize-cli": "5.5.1"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "engineStrict": true
+}
